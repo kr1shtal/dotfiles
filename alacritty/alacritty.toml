@@ -1,0 +1,16 @@
+import = [
+    "~/.config/alacritty/catppuccin-frappe.toml"
+]
+
+[window]
+dimensions = { columns = 80, lines = 24 }
+
+[font]
+size = 18
+normal = { family = "JetBrains Mono", style = "Regular" }
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "off" }
