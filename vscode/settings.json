@@ -1,0 +1,43 @@
+{
+  "update.showReleaseNotes": false,
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Jellybeans Theme",
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 2,
+  "editor.fontSize": 20,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.smoothScrolling": false,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.cursorBlinking": "solid",
+  "window.commandCenter": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "onWindowChange",
+  "telemetry.telemetryLevel": "off",
+
+  "[python]": { 
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ]
+}
