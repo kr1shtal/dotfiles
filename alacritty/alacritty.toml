@@ -1,16 +1,29 @@
+[general]
 import = [
-    "~/.config/alacritty/catppuccin-frappe.toml"
+    "dracula.toml"
 ]
 
+working_directory = "C:/Dev"
+
+[env]
+TERM = "xterm-256color"
+
 [window]
-dimensions = { columns = 80, lines = 24 }
+# opacity = 0.9
+dimensions = { columns = 132, lines = 43 }
 
 [font]
-size = 18
-normal = { family = "JetBrains Mono", style = "Regular" }
+size = 16 
+normal = { family = "Fira Code", style = "Regular" }
 
 [selection]
 save_to_clipboard = true
 
 [cursor]
-style = { shape = "Beam", blinking = "off" }
+style = { shape = "Block", blinking = "off" }
+
+[terminal]
+shell = "cmd"
+
+[mouse]
+hide_when_typing = true
