@@ -16,7 +16,6 @@ return {
 
   {
     "williamboman/mason-lspconfig.nvim",
-    enabled = false,
     config = function()
       require("mason-lspconfig").setup {
         ensure_installed = {
