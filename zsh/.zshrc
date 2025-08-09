@@ -25,6 +25,7 @@ alias ave="source $HOME/Developer/.venv/bin/activate"
 alias dve="deactivate"
 
 alias dev="cd ~/Developer"
+alias cfg="nvim ~/.config/nvim/init.lua"
 alias home="cd ~/"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
