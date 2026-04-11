@@ -13,7 +13,7 @@ TERM = "xterm-256color"
 dimensions = { columns = 132, lines = 43 }
 
 [font]
-size = 16 
+size = 14
 normal = { family = "Fira Code", style = "Regular" }
 
 [selection]
@@ -23,7 +23,7 @@ save_to_clipboard = true
 style = { shape = "Block", blinking = "off" }
 
 [terminal]
-shell = "cmd"
+shell = "C:/Program Files/Git/bin/bash.exe"
 
 [mouse]
 hide_when_typing = true
