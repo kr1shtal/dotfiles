@@ -7,12 +7,13 @@
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.tree.enableStickyScroll": false,
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "symbols",
+  "workbench.browser.showInTitleBar": false,
   "workbench.colorTheme": "Jellybeans Theme",
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
   "editor.lineNumbers": "relative",
   "editor.tabSize": 2,
-  "editor.fontSize": 22,
+  "editor.fontSize": 18,
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.scrollbar.horizontal": "hidden",
@@ -35,13 +36,17 @@
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "black-formatter.args": [
-    "--line-length=88"
-  ],
-  "flake8.args": [
-      "--max-line-length=88",
-      "--extend-ignore=E203, E266, N807, N818, F401"
-  ],
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "chat.titleBar.signIn.enabled": false,
+  "chat.viewSessions.orientation": "stacked",
+  "chatgpt.followUpQueueMode": "queue",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "python.analysis.typeCheckingMode": "standard",
   "[python]": { 
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
@@ -50,6 +55,23 @@
       "source.organizeImports": "explicit"
     }
   },
+  "isort.args": [
+    "--profile", "black"
+  ],
+  "black-formatter.args": [
+    "--line-length=88"
+  ],
+  "flake8.args": [
+      "--max-line-length=88",
+      "--extend-ignore=E203, E266, N807, N818, F401"
+  ],
+  "files.associations": {
+      "*.jinja": "jinja",
+      "*.html": "jinja-html",
+      "*.sls": "jinja-yaml"
+  },
+  "zig.zls.enabled": "on",
+  "vscode-pets.theme": "forest",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
