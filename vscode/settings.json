@@ -1,77 +1,50 @@
 {
-  "update.showReleaseNotes": false,
+  "workbench.colorTheme": "Jellybeans Theme",
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.empty.hint": "hidden",
-  "workbench.statusBar.visible": true,
   "workbench.tips.enabled": false,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.browser.showInTitleBar": false,
-  "workbench.colorTheme": "Jellybeans Theme",
-  "workbench.iconTheme": "symbols",
-  "workbench.productIconTheme": "fluent-icons",
-  "editor.lineNumbers": "relative",
-  "editor.tabSize": 2,
-  "editor.fontSize": 18,
+  "workbench.statusBar.visible": true,
+  "window.commandCenter": false,
+  "breadcrumbs.enabled": true,
   "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 20,
   "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.bracketPairColorization.enabled": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  "editor.stickyScroll.enabled": false,
-  "editor.minimap.enabled": false,
-  "editor.bracketPairColorization.enabled": false,
-  "editor.linkedEditing": true,
-  "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "solid",
-  "window.commandCenter": false,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
   "files.autoSave": "onWindowChange",
   "files.insertFinalNewline": true,
-  "telemetry.telemetryLevel": "off",
-  "breadcrumbs.enabled": true,
-  "extensions.ignoreRecommendations": true,
-  "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "terminal.integrated.fontSize": 18,
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "chat.titleBar.openInAgentsWindow.enabled": false,
-  "chat.titleBar.signIn.enabled": false,
-  "chat.viewSessions.orientation": "stacked",
-  "chatgpt.followUpQueueMode": "queue",
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
+  "files.trimTrailingWhitespace": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
   },
-  "python.analysis.typeCheckingMode": "standard",
-  "[python]": { 
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    }
-  },
-  "isort.args": [
-    "--profile", "black"
-  ],
-  "black-formatter.args": [
-    "--line-length=88"
-  ],
-  "flake8.args": [
-      "--max-line-length=88",
-      "--extend-ignore=E203, E266, N807, N818, F401"
-  ],
   "files.associations": {
       "*.jinja": "jinja",
       "*.html": "jinja-html",
       "*.sls": "jinja-yaml"
   },
-  "zig.zls.enabled": "on",
-  "vscode-pets.theme": "forest",
+  "emmet.includeLanguages": {
+    "jinja-html": "html"
+  },
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -82,5 +55,48 @@
       "before": ["k", "j"],
       "after": ["<Esc>"]
     }
-  ]
+  ],
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "isort.args": [
+    "--profile", "black",
+    "--filter-files"
+  ],
+  "black-formatter.args": [
+    "--target-version=py313",
+    "--line-length=88"
+  ],
+  "flake8.args": [
+      "--max-line-length=88",
+      "--skip-string-normalization",
+      "--extend-ignore=E203, W503, E266, N807, N818, B008",
+      "--per-file-ignores=__init__.py:F401"
+  ],
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "telemetry.telemetryLevel": "off",
+  "update.showReleaseNotes": false,
+  "extensions.ignoreRecommendations": true,
+  "zig.zls.enabled": "on",
+  "vscode-pets.theme": "forest",
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "chat.titleBar.signIn.enabled": false,
+  "chat.viewSessions.orientation": "stacked",
+  "chatgpt.followUpQueueMode": "queue",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
